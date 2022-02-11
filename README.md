@@ -1,6 +1,33 @@
 # project1
 
 
+# 查看状态
+$ git status
+
+# 添加管理(将文件或目录添加到本地仓库的暂存区)
+$ git add filename  # 将文件添加到暂存区
+$ git add path/     # 将目录添加到暂存区
+$ git add .         # 将当前目录所有内容(文件或文件夹) 都添加到暂存区
+$ git add --all     # 将所有内容添加到暂存区
+
+# 将文件移出暂存区
+$ git rm --cached filename
+
+# 将暂存区的内容提交到本地仓库
+$ git commit -m 'message'
+
+# 查看提交日志
+$ git log
+
+# 恢复版本
+$ git reset --hard 提交记录前6位
+
+# 查看帮助
+$ git --help
+
+# 恢复文件
+$ git checkout filename
+
 ### git远程仓库操作
 ```bash
 # 克隆远程仓库到本地
